@@ -1,0 +1,17 @@
+# Secrets & Environment (NEVER commit credentials to GitHub)
+.env
+
+# Raw 95 MB CSV (exceeds GitHub's 50 MB warning / 100 MB limit; pre-aggregated JSON in app/public/data/ is included)
+data/*.csv
+data/*.zip
+
+# Temporary Chrome test profile & Python caches
+.chrome_test_profile/
+__pycache__/
+*.pyc
+prep_log.txt
+
+# Node / Vite build artifacts
+node_modules/
+app/node_modules/
+app/dist/
